@@ -1,0 +1,53 @@
+{
+  "name": "@soulofmischief/array.js",
+  "version": "0.1.0",
+  "description": "A humble array library.",
+  "main": "lib/index.js",
+  "repository": "https://github.com/soulofmischief/array.js",
+  "author": "soulofmischief <soulofmischief@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
+    "build:dev": "NODE_ENV=development nodemon -w src --exec 'yarn build'",
+    "build:flow": "flow-copy-source src lib",
+    "build:lib": "babel src -d lib",
+    "coverage": "nyc --reporter=lcov ospec",
+    "clean": "npx rimraf lib",
+    "lint:flow": "npx flow status",
+    "lint:flow:stop": "npx flow stop",
+    "preinstall": "npm run prepublish",
+    "prepublish": "npm run build --scripts-prepend-node-path",
+    "report-coverage": "yarn coverage && codecov",
+    "test": "babel-node node_modules/.bin/ospec"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.5.5",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-istanbul": "^5.2.0",
+    "codecov": "^3.5.0",
+    "eslint": "^5.11.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^3.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "flow-bin": "^0.97.0",
+    "flow-copy-source": "^2.0.3",
+    "nyc": "^14.1.1",
+    "ospec": "^4.0.1",
+    "rimraf": "^2.6.3"
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "sourceMap": false
+  }
+}
