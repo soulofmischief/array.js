@@ -1,6 +1,6 @@
 {
   "name": "@soulofmischief/array.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A humble array library.",
   "main": "lib/index.js",
   "repository": "https://github.com/soulofmischief/array.js",
@@ -43,5 +43,9 @@
     "ospec": "^4.0.1",
     "rimraf": "^2.6.3"
   },
-  "nyc": { "require": [ "@babel/register" ]}
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ]
+  }
 }
