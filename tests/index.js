@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { enumerate, enumerateMap } from '../src'
+import { enumerate, enumerateMap, enumerateOne } from '../src'
 
 
 const a0 = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
@@ -13,6 +13,16 @@ o.spec( 'enumerate', function () {
 
   o( 'parameter', function () {
     o( enumerate( 10 )).deepEquals( a0 )
+  })
+})
+
+o.spec( 'enumerateOne', function () {
+  o( 'empty', function () {
+    o( enumerateOne()).deepEquals([])
+  })
+
+  o( 'parameter', function () {
+    o( enumerateOne( 10 )).deepEquals( a1 )
   })
 })
 

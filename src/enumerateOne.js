@@ -2,14 +2,14 @@
 
 
 /**
- * Enumerate a zero-indexed array of size n.
+ * Enumerate a one-indexed array of size n.
  * @param {number} n Size of array.
  * @return {array} Enumerated array.
  */
-export function enumerate( n: number = 0 ) {
+export function enumerateOne( n: number = 0 ) {
   const a = []
 
-  for ( let i = 0; i < n; i++ ) {
+  for ( let i = 1; i <= n; i++ ) {
     a.push( i )
   }
 
