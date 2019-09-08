@@ -1,6 +1,6 @@
 {
   "name": "@soulofmischief/array.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A humble array library.",
   "main": "lib/index.js",
   "repository": "https://github.com/soulofmischief/array.js",
@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
     "build:dev": "NODE_ENV=development nodemon -w src --exec 'yarn build'",
-    "build:flow": "flow-copy-source src lib",
+    "build:flow": "npx flow-copy-source src lib",
     "build:lib": "babel src -d lib",
     "coverage": "nyc --reporter=lcov ospec",
     "clean": "npx rimraf lib",
