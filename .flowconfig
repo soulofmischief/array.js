@@ -3,6 +3,8 @@ flow-typed
 
 [options]
 ;; Experimental features
+esproposal.export_star_as=enable
+esproposal.optional_chaining=enable
 esproposal.nullish_coalescing=enable
 
 ;; Enforce strict mode for all modules
