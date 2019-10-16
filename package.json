@@ -55,6 +55,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.6.2",
-    "@soulofmischief/js-utils": "^0.4.4"
+    "@soulofmischief/js-utils": "^0.5.1"
   }
 }
