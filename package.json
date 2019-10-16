@@ -1,6 +1,6 @@
 {
   "name": "@soulofmischief/array.js",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "A humble array library.",
   "main": "lib/",
   "repository": "https://github.com/soulofmischief/array.js",
