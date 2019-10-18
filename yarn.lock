@@ -821,12 +821,28 @@
     "@babel/runtime" "^7.6.2"
     "@soulofmischief/js-utils" "^0.5.1"
 
+"@soulofmischief/array.js@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/array.js/-/array.js-0.5.0.tgz#e4b2ba0b88141f9afeab8afdbca815ef7c47f64f"
+  integrity sha512-QT2QG4fhFCdobQoyexDxAJ7iBAiF6KqSabgwzY66pWQAB2QZ1epo0Amy4mju3vf0c8yJr1QubhW3Buq7RVaUoQ==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    "@soulofmischief/js-utils" "^0.5.1"
+
 "@soulofmischief/js-utils@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.5.1.tgz#273df43c8dc86a03bb023fe347870b3f5c4a1c1b"
   integrity sha512-fxj/1P0stXiOgufr1LuOH2A8iuP5eNXhVwR2E7xjMBamxjWoPIm/19yE+GoFmZw1TkMdGAKei5gdz5TcR6k2Wg==
   dependencies:
     "@soulofmischief/array.js" "^0.4.0"
+    lodash "^4.17.15"
+
+"@soulofmischief/js-utils@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@soulofmischief/js-utils/-/js-utils-0.5.3.tgz#6fb9b7e39f49e9a9f3238858703585fdfca985fd"
+  integrity sha512-CC/L+9bq7mUWM4tYT48m7aP7RYWcCgH3MRAskbYPqYta51IyX8yJ2pO7+32ErQZhgwquN4bZq3NHK70hYvvwGA==
+  dependencies:
+    "@soulofmischief/array.js" "^0.5.0"
     lodash "^4.17.15"
 
 abbrev@1:
