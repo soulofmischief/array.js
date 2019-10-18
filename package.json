@@ -2,10 +2,13 @@
   "name": "@soulofmischief/array.js",
   "version": "0.5.0",
   "description": "A humble array library.",
-  "main": "lib/",
   "repository": "https://github.com/soulofmischief/array.js",
   "author": "soulofmischief <soulofmischief@protonmail.com>",
   "license": "MIT",
+  "main": "/lib",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
     "build:dev": "NODE_ENV=development nodemon -w src --exec 'yarn build'",
