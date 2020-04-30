@@ -2,8 +2,6 @@ import o from 'ospec'
 import { a0, a1 } from './_var'
 import { enumerate, enumerateMap, enumerateOne } from '../src'
 
-import './filter'
-
 
 o.spec( 'enumerate', function () {
   o( 'empty', function () {
