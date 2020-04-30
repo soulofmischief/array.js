@@ -1,13 +1,13 @@
 {
   "name": "@soulofmischief/array.js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A humble array library.",
   "repository": "https://github.com/soulofmischief/array.js",
   "author": "soulofmischief <soulofmischief@protonmail.com>",
   "license": "MIT",
-  "main": "/lib",
+  "main": "lib",
   "files": [
-    "/lib"
+    "lib"
   ],
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
@@ -23,33 +23,33 @@
     "test": "babel-node node_modules/.bin/ospec"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
-    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "@babel/plugin-transform-destructuring": "^7.6.0",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/register": "^7.6.2",
-    "babel-eslint": "^10.0.3",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-transform-destructuring": "^7.9.5",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-flow": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-lodash": "^3.3.4",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "codecov": "^3.6.1",
-    "eslint": "^6.5.1",
-    "eslint-config-standard": "^14.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-flowtype": "^4.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "flow-bin": "^0.109.0",
-    "flow-copy-source": "^2.0.8",
-    "nyc": "^14.1.1",
-    "ospec": "^4.0.1",
-    "rimraf": "^3.0.0"
+    "flow-bin": "^0.123.0",
+    "flow-copy-source": "^2.0.9",
+    "nyc": "^15.0.1",
+    "ospec": "^4.1.1",
+    "rimraf": "^3.0.2"
   },
   "nyc": {
     "require": [
@@ -57,7 +57,7 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.3",
+    "@babel/runtime": "^7.9.6",
     "@soulofmischief/js-utils": "^0.5.3"
   }
 }
