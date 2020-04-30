@@ -1,6 +1,6 @@
 {
   "name": "@soulofmischief/array.js",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A humble array library.",
   "repository": "https://github.com/soulofmischief/array.js",
   "author": "soulofmischief <soulofmischief@protonmail.com>",
@@ -18,9 +18,10 @@
     "clean": "npx rimraf lib",
     "lint:flow": "npx flow status",
     "lint:flow:stop": "npx flow stop",
-    "prepublishOnly": "npm run build --scripts-prepend-node-path",
+    "prepublishOnly": "npm run build --scripts-prepend-node-path && cd lib",
     "report-coverage": "yarn coverage && codecov",
-    "test": "babel-node node_modules/.bin/ospec"
+    "test": "babel-node node_modules/.bin/ospec",
+    "dist": "cd lib && npm publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
