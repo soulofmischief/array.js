@@ -5,10 +5,7 @@
   "repository": "https://github.com/soulofmischief/array.js",
   "author": "soulofmischief <soulofmischief@protonmail.com>",
   "license": "MIT",
-  "main": "lib",
-  "files": [
-    "lib"
-  ],
+  "main": "index",
   "scripts": {
     "build": "npm run clean --scripts-prepend-node-path; for script in {flow,lib}; do npm run build:$script --scripts-prepend-node-path; done",
     "build:dev": "NODE_ENV=development nodemon -w src --exec 'yarn build'",
@@ -18,10 +15,9 @@
     "clean": "npx rimraf lib",
     "lint:flow": "npx flow status",
     "lint:flow:stop": "npx flow stop",
-    "prepublishOnly": "npm run build --scripts-prepend-node-path && cd lib",
     "report-coverage": "yarn coverage && codecov",
     "test": "babel-node node_modules/.bin/ospec",
-    "dist": "cd lib && npm publish"
+    "publish:flat": "yarn build && cp -f package.json lib && cd lib && yarn publish -access public"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -50,7 +46,8 @@
     "flow-copy-source": "^2.0.9",
     "nyc": "^15.0.1",
     "ospec": "^4.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "yarn": "^1.22.4"
   },
   "nyc": {
     "require": [
