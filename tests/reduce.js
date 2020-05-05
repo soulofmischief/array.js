@@ -9,9 +9,9 @@ const
 
 
 o( 'toObject', function () {
-  o( Object.entries( obj ).reduce( toObject, {})).deepEquals( obj )
+  o( Object.entries( obj ).reduce( ...toObject )).deepEquals( obj )
 })
 
 o( 'byName', function () {
-  o([ obj ].reduce( byName, {})).deepEquals({ obj: obj })
+  o([ obj ].reduce( ...byName )).deepEquals({ obj: obj })
 })
