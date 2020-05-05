@@ -1,5 +1,5 @@
 // @flow strict
-import { clone } from '@soulofmischief/js-utils/lib/clone'
+import { clone } from '@soulofmischief/js-utils/clone'
 import { pullFromIndex } from './pullFromIndex'
 
 
