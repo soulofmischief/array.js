@@ -16,7 +16,6 @@ export * as filter from './filter'
 export { exists } from './filter'
 
 export * as reduce from './reduce'
-export { toObject } from './reduce'
 
 
 
