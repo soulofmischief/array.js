@@ -5,7 +5,9 @@
  * Reduce an entries table (produced by Object.entries) back to an object.
  * Spread into an Array.reduce function.
  */
-export function toObject <O>( obj: O, entry: *[]) {
+function f <O>( obj: O, entry: *[]) {
   obj[ entry[ 0 ]] = entry[ 1 ]
-  return [ obj, {}]
+  return obj
 }
+
+export const toObject = [ f, {}]

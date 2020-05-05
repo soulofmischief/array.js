@@ -1,11 +1,8 @@
 import o from 'ospec'
-import { a0, a1 } from './_var'
-import { reduce } from '../src'
+import { byName, toObject } from '../src/reduce'
 
 
-const
-  { toObject, byName } = reduce,
-  obj = { name: 'obj', x: 1, y: 2 }
+const obj = { name: 'test', x: 1, y: 2 }
 
 
 o( 'toObject', function () {
@@ -13,5 +10,5 @@ o( 'toObject', function () {
 })
 
 o( 'byName', function () {
-  o([ obj ].reduce( ...byName )).deepEquals({ obj: obj })
+  o([ obj ].reduce( ...byName )).deepEquals({ test: obj })
 })

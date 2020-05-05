@@ -6,6 +6,8 @@
  * property.
  * Spread into an Array.reduce function.
  */
-export function byName <O>( acc: O, obj: { name: string }) {
-  return [{ ...acc, [ obj.name ]: obj }, {}]
+function f <O>( acc: O, obj: { name: string }) {
+  return { ...acc, [ obj.name ]: obj }
 }
+
+export const byName = [ f, {}]
