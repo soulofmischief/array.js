@@ -2,13 +2,17 @@ import o from 'ospec'
 import { byName, toObject } from '../src/reduce'
 
 
-const obj = { name: 'test', x: 1, y: 2 }
+const
+  obj1 = { name: 'test1', a: 1, b: 2 },
+  obj2 = { name: 'test2', c: 4, d: 4 }
 
 
-o( 'toObject', function () {
-  o( Object.entries( obj ).reduce( ...toObject )).deepEquals( obj )
+o( 'toObject', () => {
+  o( Object.entries( obj1 ).reduce( ...toObject())).deepEquals( obj1 )
+  o( Object.entries( obj2 ).reduce( ...toObject())).deepEquals( obj2 )
 })
 
-o( 'byName', function () {
-  o([ obj ].reduce( ...byName )).deepEquals({ test: obj })
+o( 'byName', () => {
+  o([ obj1 ].reduce( ...byName())).deepEquals({[ obj1.name ]: obj1 })
+  o([ obj2 ].reduce( ...byName())).deepEquals({[ obj2.name ]: obj2 })
 })

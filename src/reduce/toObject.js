@@ -10,4 +10,4 @@ function f <O>( obj: O, entry: *[]) {
   return obj
 }
 
-export const toObject = [ f, {}]
+export const toObject = () => [ f, {}]
