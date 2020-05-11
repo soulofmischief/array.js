@@ -11,6 +11,7 @@ export { pull } from './pull'
 export { pullFirst } from './pullFirst'
 export { pullFromIndex } from './pullFromIndex'
 export { shuffle } from './shuffle'
+export { shuffleUnique } from './shuffleUnique'
 export { splitRecursive } from './splitRecursive'
 
 export * as filter from './filter'
