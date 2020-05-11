@@ -1,10 +1,11 @@
 import o from 'ospec'
-import { byName, toObject } from '../src/reduce'
+import { byID, byName, byProp, toObject } from '../src/reduce'
 
 
 const
-  obj1 = { name: 'test1', a: 1, b: 2 },
-  obj2 = { name: 'test2', c: 4, d: 4 }
+  obj1 = { name: 'test1', id: 't1', a: 1, b: 2 },
+  obj2 = { name: 'test2', id: 't2', c: 4, d: 4 },
+  prop = 'id'
 
 
 o( 'toObject', () => {
@@ -16,3 +17,13 @@ o( 'byName', () => {
   o([ obj1 ].reduce( ...byName())).deepEquals({[ obj1.name ]: obj1 })
   o([ obj2 ].reduce( ...byName())).deepEquals({[ obj2.name ]: obj2 })
 })
+o( 'byID', () => {
+  o([ obj1 ].reduce( ...byID())).deepEquals({[ obj1.id ]: obj1 })
+  o([ obj2 ].reduce( ...byID())).deepEquals({[ obj2.id ]: obj2 })
+})
+
+o( 'byProp', () => {
+  o([ obj1 ].reduce( ...byProp( prop ))).deepEquals({[ obj1[ prop ]]: obj1 })
+  o([ obj2 ].reduce( ...byProp( prop ))).deepEquals({[ obj2[ prop ]]: obj2 })
+})
+
