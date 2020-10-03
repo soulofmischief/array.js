@@ -17,5 +17,5 @@ export function shuffleUnique( arr ) {
   const a = shuffle( arr )
 
   // Tail call optimization.
-  return !isEqual( a, arr ) ? a : shuffle( arr )
+  return !isEqual( a, arr ) ? a : shuffleUnique( arr )
 }
