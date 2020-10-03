@@ -8,6 +8,6 @@
  * @param {number} index The index of the element to be removed.
  * @returns {Array} Returns `array`.
  */
-export function pullFromIndex( array: *[], index?: number = 0 ) {
+export function pullFromIndex( array: *[], index: number = 0 ) {
   return [ ...array.slice( 0, index ), ...array.slice( index + 1 )]
 }
