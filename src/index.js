@@ -4,6 +4,7 @@
 export { enumerate } from './enumerate'
 export { enumerateMap } from './enumerateMap'
 export { enumerateOne } from './enumerateOne'
+export { enumerateValue } from './enumerateValue'
 export { get } from './get'
 export { getLast } from './getLast'
 export { getRandom } from './getRandom'
