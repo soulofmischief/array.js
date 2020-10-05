@@ -8,8 +8,8 @@
  * @param {?function} map Mapping function.
  */
 export function enumerateMap(
-  n?: number = 0,
-  map?: ( i?: number ) => ?* = i => i
+  n: number = 0,
+  map: ( i?: number ) => ?* = i => i
 ) {
   const a = []
 
