@@ -1,9 +1,11 @@
 import o from 'ospec'
-import { a0, a1 } from './_var'
 import { filter } from '../src'
 
 
-const { exists } = filter
+const
+  a0 = [ 0, 1, 2 ],
+  a1 = [ 1, 2, 3 ],
+  { exists } = filter
 
 
 o( 'exists', function () {
