@@ -107,5 +107,15 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Project
 lib
 lib/package.json
