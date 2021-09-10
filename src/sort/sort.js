@@ -1,5 +1,5 @@
 // @flow strict
-import { clone } from '@soulofmischief/js-utils'
+import { clone } from 'lodash'
 
 
 /**

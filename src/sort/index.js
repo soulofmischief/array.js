@@ -1,21 +1,16 @@
-// @flow strict
 import { sort } from './sort'
-
-import type { ArraySort } from 'Flow'
 
 
 export { sort }
 
-export const sortNumberAscending: ArraySort<*> = (
-  arr: *[], prop?: *
-) =>
+export const sortNumberAscending = ( arr, prop ) =>
   sort(( a, b ) => prop ? a[prop] - b[prop] : a - b, arr )
 
-export const sortNumberDescending: ArraySort<*> = (
-  arr: *[], prop?: *
-) =>
+export const sortNumberDescending  = ( arr, prop ) =>
   sort(( a, b ) => prop ? b[prop] - a[prop] : b - a, arr )
 
+
+/** TODO: Why isn't this exporting correctly? */
 export function byProp( prop, cb1, cb2 ) {
   if ( cb1 && cb2 ) return ( a, b ) => {
     if( cb1( a[ prop ], b[ prop ] )) return -1
