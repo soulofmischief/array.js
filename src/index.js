@@ -11,6 +11,7 @@ export { getRandom } from './getRandom'
 export { pull } from './pull'
 export { pullFirst } from './pullFirst'
 export { pullFromIndex } from './pullFromIndex'
+export { pullMultiple } from './pullMultiple'
 export { shuffle } from './shuffle'
 export { shuffleUnique } from './shuffleUnique'
 export { splitRecursive } from './splitRecursive'
@@ -20,8 +21,3 @@ export { exists } from './filter'
 
 export * as reduce from './reduce'
 export * as sort from './sort'
-
-
-
-
-
