@@ -14,7 +14,7 @@
   "scripts": {
     "build": "yarn clean --scripts-prepend-node-path && yarn build:flow && yarn build:lib",
     "build:dev": "NODE_ENV=development nodemon -w src --exec 'yarn build'",
-    "build:flow": "yarn dlx flow-copy-source src lib",
+    "build:flow": "yarn flow-copy-source src lib",
     "build:lib": "babel src -d lib",
     "coverage": "nyc --reporter=lcov ospec",
     "clean": "yarn rimraf lib",
