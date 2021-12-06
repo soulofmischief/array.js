@@ -1441,7 +1441,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@soulofmischief/array.js@^0.19.0, @soulofmischief/array.js@workspace:.":
+"@soulofmischief/array.js@npm:^0.13.0":
+  version: 0.13.1
+  resolution: "@soulofmischief/array.js@npm:0.13.1"
+  dependencies:
+    "@babel/runtime": ^7.9.6
+    "@soulofmischief/js-utils": ^0.13.0
+  checksum: f798b239d8f717126b3408815d5f23de84d57c48ed19f8db81db6c00e488ab62f878a28f7eeb331dc460a80dcc26122be4e6022e5ca91d367a2b0c9081d2d105
+  languageName: node
+  linkType: hard
+
+"@soulofmischief/array.js@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@soulofmischief/array.js@npm:0.16.0"
+  dependencies:
+    "@babel/runtime": ^7.9.6
+    "@soulofmischief/js-utils": ^0.13.0
+  checksum: 4d2eecdd751fb657b58c31a8fd3c7598740894128e7030d72ae05688090af6fa7ce0b8bd91b29db98cb05d8200ff20c69a366814d6e00d1aba30f878187f4b06
+  languageName: node
+  linkType: hard
+
+"@soulofmischief/array.js@npm:^0.19.0":
+  version: 0.19.5
+  resolution: "@soulofmischief/array.js@npm:0.19.5"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@soulofmischief/js-utils": ^0.18.6
+    lodash: ^4.17.21
+  checksum: 2545e41c6022e5731ee1aa4b35a5068233c4f55110d80d8f75eaf4080345552c94af2dc7e87ffd0121e366ca504f35849397be31919885d55dbdd699ee3ecd6e
+  languageName: node
+  linkType: hard
+
+"@soulofmischief/array.js@workspace:.":
   version: 0.0.0-use.local
   resolution: "@soulofmischief/array.js@workspace:."
   dependencies:
@@ -1477,26 +1508,6 @@ __metadata:
     yarn: ^1.22.11
   languageName: unknown
   linkType: soft
-
-"@soulofmischief/array.js@npm:^0.13.0":
-  version: 0.13.1
-  resolution: "@soulofmischief/array.js@npm:0.13.1"
-  dependencies:
-    "@babel/runtime": ^7.9.6
-    "@soulofmischief/js-utils": ^0.13.0
-  checksum: f798b239d8f717126b3408815d5f23de84d57c48ed19f8db81db6c00e488ab62f878a28f7eeb331dc460a80dcc26122be4e6022e5ca91d367a2b0c9081d2d105
-  languageName: node
-  linkType: hard
-
-"@soulofmischief/array.js@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "@soulofmischief/array.js@npm:0.16.0"
-  dependencies:
-    "@babel/runtime": ^7.9.6
-    "@soulofmischief/js-utils": ^0.13.0
-  checksum: 4d2eecdd751fb657b58c31a8fd3c7598740894128e7030d72ae05688090af6fa7ce0b8bd91b29db98cb05d8200ff20c69a366814d6e00d1aba30f878187f4b06
-  languageName: node
-  linkType: hard
 
 "@soulofmischief/async.js@npm:^1.4.0":
   version: 1.6.0

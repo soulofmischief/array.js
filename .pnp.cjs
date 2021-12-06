@@ -2474,6 +2474,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:0.19.5", {
+          "packageLocation": "./.yarn/cache/@soulofmischief-array.js-npm-0.19.5-d60aa6d50a-2545e41c60.zip/node_modules/@soulofmischief/array.js/",
+          "packageDependencies": [
+            ["@soulofmischief/array.js", "npm:0.19.5"],
+            ["@babel/runtime", "npm:7.15.4"],
+            ["@soulofmischief/js-utils", "npm:0.18.6"],
+            ["lodash", "npm:4.17.21"]
+          ],
+          "linkType": "HARD",
+        }],
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
@@ -2572,7 +2582,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@soulofmischief-js-utils-npm-0.18.6-7c5fcb01d0-a9c2a023a2.zip/node_modules/@soulofmischief/js-utils/",
           "packageDependencies": [
             ["@soulofmischief/js-utils", "npm:0.18.6"],
-            ["@soulofmischief/array.js", "workspace:."],
+            ["@soulofmischief/array.js", "npm:0.19.5"],
             ["@soulofmischief/async.js", "npm:5.0.0"],
             ["lodash", "npm:4.17.21"]
           ],
