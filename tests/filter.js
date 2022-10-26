@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { filter } from '../src'
+import { filter } from '../src/index.js'
 
 
 const

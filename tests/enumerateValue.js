@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { enumerateValue } from '../src'
+import { enumerateValue } from '../src/index.js'
 
 
 o( 'enumerateValue', () => {

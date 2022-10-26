@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { shuffleUnique } from '../src'
+import { shuffleUnique } from '../src/index.js'
 
 
 const

@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { enumerate, enumerateMap, enumerateValue } from '../src'
+import { enumerate, enumerateMap, enumerateValue } from '../src/index.js'
 
 
 const

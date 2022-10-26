@@ -1,5 +1,5 @@
 import o from 'ospec'
-import { enumerate } from '../src'
+import { enumerate } from '../src/index.js'
 
 const a0 = [ 0, 1, 2 ]
 

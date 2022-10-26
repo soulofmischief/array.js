@@ -1,11 +1,12 @@
 import o from 'ospec'
+
 import {
   byID,
   byName,
   byProp,
   toObject,
   toObjectMultiple
-} from '../src/reduce'
+} from '../src/reduce/index.js'
 
 
 const
